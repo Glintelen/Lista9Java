@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Exercicio3 {
+public static void main(String args[]) {
+comparacaso();}
+public static void comparacaso(){
+Scanner digite = new Scanner(System.in);
+System.out.print ("Digite uma palavra: ");
+String palavra1 = digite.nextLine();
+System.out.print ("Digite outra palavra: ");
+String palavra2 = digite.nextLine();
+if (palavra1.equals(palavra2)){
+System.out.println ("As palavras digitadas sao iguais.\n");
+}
+else{
+    System.out.println("As palavras sao diferentes\n");
+}
+if (palavra1.equalsIgnoreCase(palavra2)){
+System.out.println ("Ignorando maiusculas e minusculas: as palavras digitadas sao iguais.");
+}
+else{
+    System.out.println("Ignorando maiusculas e minusculas: as palavras sao diferentes");
+}
+}
+
+}
