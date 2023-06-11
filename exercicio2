@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class Exercicio2 {
+public static void main(String args[]) {
+lerpalavra();}
+public static void lerpalavra(){
+Scanner digite = new Scanner(System.in);
+System.out.print ("Digite uma palavra com no minimo 8 caracteres: ");
+String palavra = digite.nextLine();
+int tam = palavra.length();
+if (tam>8){
+System.out.println ("A palavra digitada e: " + palavra);
+System.out.println ("A palavra digitada tem: "+tam+ " Caracteres.");
+    System.out.println ("A palavra formada com os dois primeiros e os dois ultimos caracteres: --> "+ palavra.substring(0,2) +palavra.charAt(palavra.length() - 2) + palavra.charAt(palavra.length() - 1));
+}
+else{
+    System.out.println("ERRO: A palavra precisa conter pelo menos 8 caracteres");
+}
+}
+
+}
